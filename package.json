@@ -1,0 +1,24 @@
+{
+  "name": "redirect-map-generator",
+  "version": "0.1.0",
+  "description": "Build a 301 redirect map for a site migration from two sitemaps or URL lists: each old URL matched to its closest new one, chains and loops flagged, exported for Netlify, Cloudflare, Apache, Nginx, Vercel, Next.js, Astro or Shopify. CLI and library, no dependencies.",
+  "type": "module",
+  "bin": { "redirect-map-generator": "dist/cli.js" },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
+  "files": ["dist", "README.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && node --test test/",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": ["redirects", "301", "redirect map", "site migration", "seo", "sitemap", "netlify", "cloudflare", "nginx", "htaccess", "vercel", "nextjs", "astro", "shopify", "cli"],
+  "homepage": "https://dardo.studio/tools/redirect-map-generator/",
+  "repository": { "type": "git", "url": "git+https://github.com/nicoceron/redirect-map-generator.git" },
+  "bugs": { "url": "https://github.com/nicoceron/redirect-map-generator/issues" },
+  "author": "Nicolás Cerón <nico@dardo.studio> (https://dardo.studio)",
+  "license": "MIT",
+  "devDependencies": { "@types/node": "^22.10.0", "typescript": "^5.7.0" }
+}
