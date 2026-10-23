@@ -11,6 +11,9 @@ npx redirect-map-generator \
   --format netlify --out _redirects
 ```
 
+> Until the npm release is out, run it straight from GitHub: `npx github:nicoceron/redirect-map-generator …`
+
+
 ```
 466 old URLs, 312 new URLs: 180 keep their address, 286 need a redirect.
 Matched by slug 201, by similar words 52, to a parent section 33.
